@@ -1,11 +1,21 @@
-import "bootstrap";
-import "./style.css";
 
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
+function generadorDominio() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
+  let pronoun = ['the', 'our'];
+  let adj = ['great', 'big'];
+  let noun = ['jogger', 'racoon','pedro'];
+
+  for (let pronouns of pronoun) {
+    for (let adjs of adj) {
+      for (let nouns of noun) {
+        let dominio = "wwww." + pronouns + adjs + nouns + ".com";
+        console.log(dominio)
+      }
+    }
+  }
+
+ 
 };
+generadorDominio() // esta es la manera en la que se llama o invoca a una funcion 
